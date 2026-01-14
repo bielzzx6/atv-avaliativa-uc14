@@ -9,7 +9,7 @@ A atividade consiste no desenvolvimento de uma API usando Node.js para o recebim
 - criar arquivo de variáveis de ambiente para a API;
 - usar o banco de dados serverless PostgreSQL da Neon para o armazenamento das requisições vindas da aplicação React Native;
 - instalar os pacotes para criação de servidor HTTP para envio e recebimento de requisições, conexão com banco de dados PostgreSQL da Neon e disponibilidade de uso da API para fontes externas;
-- implementar endpoints para receber as requisições de cada recurso do dispositivo móvel(câmera, GPS e rede de internet) e de acesso dados dados de cada recurso;
+- implementar endpoints para receber as requisições de cada recurso do dispositivo móvel(câmera, GPS e rede de internet) e de acesso aos dados de cada recurso;
 - receber da câmera os seguintes dados: 
 ```json
 {
@@ -35,6 +35,8 @@ A atividade consiste no desenvolvimento de uma API usando Node.js para o recebim
     "dataHoraRede": "date" //data e hora da requisição
 }
 ```
+> **Observação:** para o campo `"tipoRede"`, receber o valor "wi-fi" ou "rede móvel".
+
 > **Observação:** para a leitura ou acesso aos dados do uso dos recursos do dispositivo móvel(câmera, GPS e rede de internet), o formato JSON pode ser o mesmo do recebimento.
 - o envio das respostas da API para cada requisição deve ser uma mensagem de sucesso ou erro, a critério da equipe, e que deve ser consumida na aplicação React Native;
 
@@ -51,8 +53,8 @@ A atividade consiste no desenvolvimento de uma API usando Node.js para o recebim
 ## Para o cumprimento da realização da atividade avaliativa, tem-se os seguintes requisitos:
 - cada equipe deverá criar uma pasta para cada parte do sistema: `api` e `app`;
 - realizar o fork do repositório do GitHub;
-- enviar até a data limite da atividadeuma pull request para o repositório do GitHub com a contribuição de cada membro da equipe;
-- os dados de conexão com o banco de dados PostgreSQL da Neon devem ser armazenados em variáveis de ambiente e será fornecidos pelo professor em breve;
+- enviar até a data limite da atividade uma pull request para o repositório do GitHub com a contribuição de cada membro da equipe;
+- os dados de conexão com o banco de dados PostgreSQL da Neon devem ser armazenados em variáveis de ambiente e serão fornecidos pelo professor em breve;
 
 ## Observações finais:
 - cada membro da turma fará parte da equipe mediante sorteio realizado em sala de aula. O resultado do sorteio fará parte do repositório do GitHub;
